@@ -1,0 +1,16 @@
+<!-- Template for the city component -->
+<div style="text-align:center">
+  <h1>
+    {{cityName}} Forecast
+  </h1>
+  <p>Extended forecast for every 3 hours in the next 5 days</p>  
+</div>
+<div class="container">
+    <ul class="list-inline"  *ngFor="let cityForecast of dataCity.list">
+        <li class="list-inline-item">{{cityForecast.dt_txt | date: 'MMM dd, yyyy hh:mm a'}}</li>
+        <li class="list-inline-item"><img src="https://openweathermap.org/img/w/{{cityForecast.weather[0].icon}}.png" class="forecast-icon" alt="forecast"></li>
+        <li class="list-inline-item">{{cityForecast.main.temp_max | number:'1.0-0'}}/ {{cityForecast.main.temp_min | number:'1.0-0'}} &#8451;</li>
+        <li class="list-inline-item weather-desc">{{cityForecast.weather[0].description}}</li>
+        <li class="list-inline-item wind-speed"><div class="wind-text">Wind</div>{{cityForecast.wind.speed | number:'1.0-0'}} m/s</li>
+      </ul>
+</div>

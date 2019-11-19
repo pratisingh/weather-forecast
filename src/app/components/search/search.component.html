@@ -1,0 +1,15 @@
+<div class="container-fluid bg">
+        <div style="text-align:center">
+                <h1>
+                        Weather Forecast
+                </h1>
+                <img width="300" src="assets/img/city.jpg">
+        </div>
+        <div class="container search">
+                <input type="text" placeholder="Search City" class="form-control searchInput" 
+                #box (keyup.enter)="onEnter(box.value)">
+                <span class="search-icon"><i class="fa fa-search "></i></span>
+                        
+                
+        </div>
+</div>

@@ -1,0 +1,56 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("/assets/img/weatherBackground.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.search {
+   height:470px;
+   width:40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+   height: 50px;
+}
+.search-icon {
+    
+        float: right;
+        margin-right: 17px;
+        margin-top: -44px;
+        position: relative;
+        z-index: 2;
+        color: #a19d9d;
+        font-size: 25px;
+    
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size:20px;
+    color: #a19d9d;
+    
+  }
+
+/* styles for the cities component */
+h1 {
+    color: #2a6c8f;
+}
+
+h2, p {
+    color: #49a2cc;
+}
+
+
+
